@@ -1,8 +1,6 @@
 package com.tky.chapter19.transformation;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 /**
  * @author tky
@@ -13,8 +11,9 @@ public class EncodingQuestion {
     public static void main(String[] args) throws IOException {
 
         //默认情况下，读取文件是按照 utf-8 编码
+        //如果读取的文本文件本身编码不是 utf-8，则读取可能出现乱码
 
-        String path = "E:\\javase\\test\\readme.txt";
+        String path = "E:\\javase\\test\\problem.txt";
         String line;
 
         BufferedReader reader = new BufferedReader(new FileReader(path));
@@ -25,5 +24,7 @@ public class EncodingQuestion {
 
         reader.close();
 
+//        InputStreamReader
+//        OutputStreamWriter
     }
 }
