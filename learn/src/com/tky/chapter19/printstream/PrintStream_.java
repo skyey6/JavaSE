@@ -12,7 +12,6 @@ import java.io.PrintStream;
 public class PrintStream_ {
     public static void main(String[] args) throws IOException {
 
-        PrintStream out = System.out;
         //在默认情况下，PrintStream 输出数据的位置是 标准输出，即显示器
         /*
             public void print(String s) {
@@ -22,6 +21,7 @@ public class PrintStream_ {
                 write(s);
             }
          */
+        PrintStream out = System.out;
         out.println("hello,呵呵");
         out.write("也可以直接使用write方法打印".getBytes());
         out.close();
