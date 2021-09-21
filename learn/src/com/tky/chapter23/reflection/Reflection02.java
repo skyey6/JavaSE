@@ -12,7 +12,6 @@ import java.lang.reflect.Method;
  */
 public class Reflection02 {
     public static void main(String[] args) throws Exception {
-
         m1();
         m2();
         m3();
